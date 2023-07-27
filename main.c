@@ -1,18 +1,24 @@
 /*
  * main.c
  *
- *  Created on: Jun 21, 2023
+ *  Created on: Jul 25, 2023
  *      Author: Mikhaiel T
  */
 #include "stdio.h"
 int main ()
 {
-	int x=5 ;
-	float y=2.0 ;
-	if (x/y == 2)
-		printf ("int/float >>> int \n") ;
-	else if (x/y == 2.5)
-		printf ("int/float >>> float \n") ;
+	int width , length , Area ;
+	printf ("if you want to calculate the area of a square you have to enter the length and the width \n") ;
+	fflush(stdout);
+	printf ("Enter the value of width \n\t");
+	fflush(stdout);
+	scanf("%d", & width);
+	printf ("Enter the value of Length \n\t");
+	fflush(stdout);
+	scanf ("%d", & length) ;
+	Area = width * length ;
+	printf("Area of sqaure = %d", Area);
 
-	return 0;
+	return 0 ;
 }
+
